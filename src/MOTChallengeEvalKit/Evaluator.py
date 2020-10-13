@@ -17,7 +17,7 @@ class Evaluator(object):
 	def __init__(self):
 		pass
 
-	def run(self, benchmark_name = None ,  gt_dir = None, res_dir = None, save_pkl = None, eval_mode = "train", seqmaps_dir = "seqmaps"):
+	def run(self, sequences, benchmark_name = None ,  gt_dir = None, res_dir = None, save_pkl = None, eval_mode = "train", seqmaps_dir = "seqmaps"):
 		"""
 		Params
 		-----
@@ -60,7 +60,8 @@ class Evaluator(object):
 
 
 		# load list of all sequences
-		self.sequences = np.genfromtxt(os.path.join( self.seqmaps_dir , self.seq_file), dtype='str', skip_header=True)
+		#self.sequences = np.genfromtxt(os.path.join( self.seqmaps_dir , self.seq_file), dtype='str', skip_header=True)
+		self.sequences = sequences
 
 
 		self.gtfiles = []

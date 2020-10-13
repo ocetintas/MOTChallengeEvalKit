@@ -1,9 +1,9 @@
 import math
 from collections import defaultdict
 import pycocotools.mask as rletools
-from mots_common.io import SegmentedObject
-from mots_common.io import load_seqmap, load_sequences, load_txt
-from Metrics import Metrics
+from .mots_common.io import SegmentedObject
+from .mots_common.io import load_seqmap, load_sequences, load_txt
+from MOTChallengeEvalKit.Metrics import Metrics
 import os, sys
 import numpy as np
 from scipy.optimize import linear_sum_assignment as linear_assignment

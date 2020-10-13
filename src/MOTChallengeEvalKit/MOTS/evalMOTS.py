@@ -2,12 +2,10 @@ import sys, os
 sys.path.append(os.path.abspath(os.getcwd()))
 import math
 from collections import defaultdict
-from MOTS_metrics import MOTSMetrics
-from Evaluator import Evaluator, run_metrics
+from .MOTS_metrics import MOTSMetrics
+from MOTChallengeEvalKit.Evaluator import Evaluator, run_metrics
 
 import multiprocessing as mp
-
-
 
 class MOTS_evaluator(Evaluator):
 	def __init__(self):

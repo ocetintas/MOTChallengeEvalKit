@@ -1,0 +1,10 @@
+data/*
+output/*
+configs/path_cfg.py
+logs/
+.idea
+.DS_store
+src/*.egg-info
+src/__pycache__
+src/MOTChallengeEvalKit.egg-info/*
+src/**/__pycache__/**
